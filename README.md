@@ -10,11 +10,14 @@ Com este código você pode conectar seu piano MIDI em seu computador para contr
 
 - Fazer o dowload deste código em seu computador e ajustar:
     - Alterar o parâmetro, static const long BaudRate = 115200; (definindo como 115200) no arquivo serialMIDI.h
-    - portas do arduino
-    - o "pitch" (código identificador) das teclas
+    - Portas do arduino
+    - O "pitch" (código identificador) das teclas
     - "velocity" parâmetro de intensidade das teclas. 
 
+
+
 Caso você tenha alguma recomendação ou encontrou um erro não hesite em entrar em contato.  :grin:
+
 
 
 ## Resources:
