@@ -2,8 +2,10 @@
 
 Com este código você pode conectar seu piano MIDI em seu computador para controlar portas digitais do Arduino. 
 
+<h3>Vídeo de demostração:</h3>
+
 <a href="https://www.youtube.com/watch?v=J_cXa-4anME">
-<img src="https://i.ytimg.com/vi/J_cXa-4anME/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAxGSjSu6rRxkUkeVLPi_u6wZ6L_A"></img>
+    <img src="https://i.ytimg.com/vi/J_cXa-4anME/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAxGSjSu6rRxkUkeVLPi_u6wZ6L_A"></img>
 </a>
 
 ## Como usar:
