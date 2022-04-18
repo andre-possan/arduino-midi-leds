@@ -1,9 +1,3 @@
-/* Codigo escrito por André, sou iniciante em C++, caso encontre um erro ou tenha uma recomendação, não hesite em mandar uma mensagem! https://github.com/andre-possan :D
-  Atenção: Para este código funcionar você deve utilizar o Hairless MIDI https://projectgus.github.io/hairless-midiserial
-  Utilizando o Hairless você deve alterar o arquivo serialMIDI.h dentro da pasta da biblioteca e definir a propriedade BaudRate para 115200:
-  static const long BaudRate = 115200;
-*/
-
 #include <MIDI.h> // Incluindo a biblioteca que utilizaremos para receber informações MIDI.
 
 int Leds[] = {13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3}; // Definindo as portas que temos leds conectados
@@ -25,7 +19,7 @@ void setup()
 
 void loop()
 {
-  MIDI.read(); // O Arduino sempre ficara lendo informações MIDI
+  MIDI.read();
 }
 
 // Função que só desiliga o led se todas as teclas referentes a ele não forem mais pressionadas:
