@@ -1,8 +1,8 @@
-#include <MIDI.h> // Incluindo a biblioteca que utilizaremos para receber informações MIDI.
+#include <MIDI.h>
 
-int Leds[] = {13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3}; // Definindo as portas que temos leds conectados
+int Leds[] = {13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3};
 int quatidadeDeLeds = sizeof(Leds);
-MIDI_CREATE_DEFAULT_INSTANCE(); // Parâmetro da biblioteca que inicia uma instância MIDI
+MIDI_CREATE_DEFAULT_INSTANCE();
 
 void setup()
 {
@@ -13,8 +13,8 @@ void setup()
 
   MIDI.begin(4); // "Escutando" apenas o canal 4, para todos os canais utilize: MIDI_CHANNEL_OMNI
   Serial.begin(115200);
-  MIDI.setHandleNoteOn(MyHandleNoteOn);  // Função que será executada quando uma tecla for pressionada
-  MIDI.setHandleNoteOff(MyHandleNoteOn); // Função que será executada quando uma tecla parar de ser pressionada.
+  MIDI.setHandleNoteOn(MyHandleNoteOn);
+  MIDI.setHandleNoteOff(MyHandleNoteOn);
 }
 
 void loop()
@@ -22,7 +22,6 @@ void loop()
   MIDI.read();
 }
 
-// Função que só desiliga o led se todas as teclas referentes a ele não forem mais pressionadas:
 int verifica(int Led, int ligado)
 {
   if (ligado > 0)
@@ -57,7 +56,6 @@ void MyHandleNoteOn(byte channel, byte pitch, byte velocity)
   for (int contador = 0; contador < quatidadeDeLeds; contador++)
   {
 
-    // Estabelecendo limites para cada led, Ex: teclas 36 a 40, vão ligar o Led1
     int minimo = (contador * 6) + 36;
     int maximo = minimo + 5;
 
@@ -72,7 +70,7 @@ void MyHandleNoteOn(byte channel, byte pitch, byte velocity)
       {
         ligado[contador] = ligado[contador] - 1;
       }
-      verifica(Leds[contador], ligado[contador]); // Chamando a função para verificar e ligar o Led
+      verifica(Leds[contador], ligado[contador]);
     }
   }
 }
