@@ -1,4 +1,4 @@
-# Arduino MIDI Leds
+# Arduino MIDI Leds <img aling="center" alt="cplusplus" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg">   <img aling="center" alt="arduino" height="50" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg">
 
 Com este código você pode conectar seu piano MIDI em seu computador para controlar portas digitais do Arduino. 
 
