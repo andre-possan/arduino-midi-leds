@@ -7,7 +7,7 @@ MIDI_CREATE_DEFAULT_INSTANCE();
 void setup()
 {
   for (int contador = 0; contador < quatidadeDeLeds; contador++)
-  { // Definindo as portas dos leds como saída
+  {
     pinMode(Leds[contador], OUTPUT);
   }
 
